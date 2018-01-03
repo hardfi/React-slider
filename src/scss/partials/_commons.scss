@@ -25,24 +25,17 @@
   font-family: 'Lato-Bold', sans-serif;
 }
 
-@keyframes modal-anim {
-  from {opacity: 0}
-  to {opacity: 1}
-}
-
-$main-color: #6d9f03;
+$main-color: #4B4DC3;
 $font-color-first: white;
 $font-color-second: #4a4a4a;
 $font-color-third: #d6d6d6;
 
 body {
-  min-height: 670px;
   font-family: 'Lato', sans-serif;
 }
 
 #app {
   min-width: 560px;
-  min-height: 670px;
 }
 
 @mixin btn {

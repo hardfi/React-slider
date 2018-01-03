@@ -1,8 +1,9 @@
 .sliderMainContainer {
   height: 500px;
-  overflow: hidden;
+  width: 75%;
   min-width: 532px;
-  margin-top: 10%;
+  margin: 10vh auto 2vh;
+  position: relative;
 
   .sliderMain {
     width: 100%;
@@ -27,7 +28,7 @@
       }
 
       &.slide2 {
-        left: 21%;
+        left: 27%;
         opacity: 0.4;
       }
 
@@ -38,7 +39,7 @@
       }
 
       &.slide4 {
-        left: 79%;
+        left: 73%;
         opacity: 0.4;
       }
 
@@ -65,8 +66,12 @@
   }
 
   .arrow-left {
-    left: -12%;
+    left: -2vw;
     background: url('../img/left.svg') center center /cover no-repeat;
+
+    @media(max-width: 1160px){
+      left: -10vw;
+    }
 
     @media(max-width: 767px){
       left: 30%;
@@ -74,8 +79,12 @@
   }
 
   .arrow-right {
-    right: -12%;
+    right: -2vw;
     background: url('../img/right.svg') center center /cover no-repeat;
+
+    @media(max-width: 1160px){
+      right: -10vw;
+    }
 
     @media(max-width: 767px){
       right: 30%;

@@ -10,25 +10,18 @@
   font-family: 'Lato-Bold';
   src: url("./fonts/Lato-Bold.ttf"); }
 
-@keyframes modal-anim {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-
 body {
-  min-height: 670px;
   font-family: 'Lato', sans-serif; }
 
 #app {
-  min-width: 560px;
-  min-height: 670px; }
+  min-width: 560px; }
 
 .sliderMainContainer {
   height: 500px;
-  overflow: hidden;
+  width: 75%;
   min-width: 532px;
-  margin-top: 10%; }
+  margin: 10vh auto 2vh;
+  position: relative; }
   .sliderMainContainer .sliderMain {
     width: 100%;
     height: 100%;
@@ -48,14 +41,14 @@ body {
         opacity: 0;
         transform: translateX(-50%) scale(0.1); }
       .sliderMainContainer .sliderMain .sliderItem.slide2 {
-        left: 21%;
+        left: 27%;
         opacity: 0.4; }
       .sliderMainContainer .sliderMain .sliderItem.slide3 {
         z-index: 10;
         left: 50%;
         transform: translateY(0px) translateX(-50%) scale(1); }
       .sliderMainContainer .sliderMain .sliderItem.slide4 {
-        left: 79%;
+        left: 73%;
         opacity: 0.4; }
       .sliderMainContainer .sliderMain .sliderItem.slide5 {
         left: 70%;
@@ -73,14 +66,20 @@ body {
       .sliderMainContainer .arrow-left, .sliderMainContainer .arrow-right {
         top: 100%; } }
   .sliderMainContainer .arrow-left {
-    left: -12%;
+    left: -2vw;
     background: url("../img/left.svg") center center/cover no-repeat; }
+    @media (max-width: 1160px) {
+      .sliderMainContainer .arrow-left {
+        left: -10vw; } }
     @media (max-width: 767px) {
       .sliderMainContainer .arrow-left {
         left: 30%; } }
   .sliderMainContainer .arrow-right {
-    right: -12%;
+    right: -2vw;
     background: url("../img/right.svg") center center/cover no-repeat; }
+    @media (max-width: 1160px) {
+      .sliderMainContainer .arrow-right {
+        right: -10vw; } }
     @media (max-width: 767px) {
       .sliderMainContainer .arrow-right {
         right: 30%; } }
@@ -115,7 +114,7 @@ body {
         font-family: 'Lato-Bold', sans-serif;
         font-size: 16px; }
         .tile .header .content h4 span {
-          color: #6d9f03; }
+          color: #4B4DC3; }
       .tile .header .content p {
         height: 45px;
         overflow: hidden; }
@@ -131,7 +130,7 @@ body {
   .tile .tile-title {
     height: 50px;
     width: 100%;
-    background-color: #6d9f03;
+    background-color: #4B4DC3;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -171,7 +170,7 @@ body {
         border: none;
         outline: none;
         border-radius: 100px;
-        background-color: #6d9f03;
+        background-color: #4B4DC3;
         color: white;
         font-size: 14px;
         cursor: pointer;
