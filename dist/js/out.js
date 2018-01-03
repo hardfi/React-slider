@@ -30362,7 +30362,8 @@ var SingleTile = function (_React$Component) {
             _react2.default.createElement(
               'h4',
               null,
-              'Profil zweryfikowany przez: ',
+              this.props.person.name,
+              ' ',
               _react2.default.createElement(
                 'span',
                 null,
@@ -30382,7 +30383,7 @@ var SingleTile = function (_React$Component) {
             _react2.default.createElement(
               'h6',
               null,
-              '\u015Arednia ocena: ',
+              'Average rating: ',
               this.props.person.rating
             )
           )
@@ -30408,7 +30409,7 @@ var SingleTile = function (_React$Component) {
               _react2.default.createElement(
                 'h5',
                 null,
-                'Bran\u017Ca:'
+                'Industry:'
               ),
               _react2.default.createElement(
                 'p',
@@ -30422,7 +30423,7 @@ var SingleTile = function (_React$Component) {
               _react2.default.createElement(
                 'h5',
                 null,
-                'Destynacja:'
+                'Destination:'
               ),
               _react2.default.createElement(
                 'p',
@@ -30436,7 +30437,7 @@ var SingleTile = function (_React$Component) {
               _react2.default.createElement(
                 'h5',
                 null,
-                'Wynagrodzenie:'
+                'Salary:'
               ),
               _react2.default.createElement(
                 'p',
@@ -30454,7 +30455,7 @@ var SingleTile = function (_React$Component) {
               _react2.default.createElement(
                 'h5',
                 null,
-                'Dost\u0119pno\u015B\u0107:'
+                'Availability:'
               ),
               _react2.default.createElement(
                 'p',
@@ -30468,7 +30469,7 @@ var SingleTile = function (_React$Component) {
               _react2.default.createElement(
                 'h5',
                 null,
-                'J\u0119zyki'
+                'Languages:'
               ),
               _react2.default.createElement(
                 'p',
@@ -30482,7 +30483,7 @@ var SingleTile = function (_React$Component) {
               _react2.default.createElement(
                 'h5',
                 null,
-                'Cena za zweryfikowany profil:'
+                'Price for verified profile:'
               ),
               _react2.default.createElement(
                 'p',
@@ -30505,7 +30506,7 @@ var SingleTile = function (_React$Component) {
             _react2.default.createElement(
               _reactstrap.Button,
               null,
-              'Zobacz pe\u0142ny opis'
+              'Full description'
             ),
             _react2.default.createElement(
               'div',
@@ -30513,12 +30514,12 @@ var SingleTile = function (_React$Component) {
               _react2.default.createElement(
                 _reactstrap.Button,
                 null,
-                'Dodaj do katalogu'
+                'Add to favorites'
               ),
               _react2.default.createElement(
                 _reactstrap.Button,
                 null,
-                'Dodaj do kosza'
+                'Don\'t show again'
               )
             )
           )
@@ -30652,121 +30653,130 @@ exports.default = Rating;
 
 module.exports = [
   {
+    name: 'Labore et Dolore',
     picture: './dist/img/person1.png',
-    verified: 'Jeden',
+    verified: 'one',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.',
     rating: '2',
-    title: 'programista',
-    industry: 'IT - Rozwój oprogramowania',
-    destination: 'Zdalnie',
+    title: 'Developer',
+    industry: 'Software Development',
+    destination: 'Remote',
     salary: '12000',
-    availability: 'za miesiąc',
-    languages: 'Angielski, Polski',
-    price: '500zł',
+    availability: 'next month',
+    languages: 'English, German',
+    price: '$200',
   },
   {
+    name: 'Magna Aliqua',
     picture: './dist/img/person2.jpg',
-    verified: 'Dwa',
+    verified: 'two',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.',
     rating: '5',
-    title: 'programista',
-    industry: 'IT - Rozwój oprogramowania',
-    destination: 'Zdalnie',
+    title: 'Sales Manager',
+    industry: 'Sales',
+    destination: 'Remote',
     salary: '12000',
-    availability: 'za miesiąc',
-    languages: 'Angielski, Polski',
-    price: '500zł',
+    availability: 'next month',
+    languages: 'English, German',
+    price: '$230',
   },
   {
+    name: 'Euismod Tempor',
     picture: './dist/img/person3.jpg',
-    verified: 'Trzy',
+    verified: 'three',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.',
     rating: '1',
-    title: 'programista',
-    industry: 'IT - Rozwój oprogramowania',
-    destination: 'Zdalnie',
+    title: 'Developer',
+    industry: 'Software Development',
+    destination: 'Remote',
     salary: '12000',
-    availability: 'za miesiąc',
-    languages: 'Angielski, Polski',
-    price: '500zł',
+    availability: 'next month',
+    languages: 'English, French, German',
+    price: '$250',
   },
   {
+    name: 'Dolor Amet',
     picture: './dist/img/person4.jpg',
-    verified: 'Cztery',
+    verified: 'four',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.',
     rating: '0',
-    title: 'programista',
-    industry: 'IT - Rozwój oprogramowania',
-    destination: 'Zdalnie',
+    title: 'Tester',
+    industry: 'Software Testing',
+    destination: 'Remote',
     salary: '12000',
-    availability: 'za miesiąc',
-    languages: 'Angielski, Polski',
-    price: '500zł',
+    availability: 'next month',
+    languages: 'English, French, German',
+    price: '$270',
   },
   {
+    name: 'Quis Nostrud',
     picture: './dist/img/person5.jpg',
-    verified: 'Pięć',
+    verified: 'five',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.',
     rating: '5',
-    title: 'programista',
-    industry: 'IT - Rozwój oprogramowania',
-    destination: 'Zdalnie',
+    title: 'Developer',
+    industry: 'Software Development',
+    destination: 'Remote',
     salary: '12000',
-    availability: 'za miesiąc',
-    languages: 'Angielski, Polski',
-    price: '500zł',
+    availability: 'next month',
+    languages: 'English, Polish',
+    price: '$250',
   },
   {
+    name: 'Incididunt Enim',
     picture: './dist/img/person1.png',
-    verified: 'Sześć',
+    verified: 'six',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.',
     rating: '3',
-    title: 'programista',
-    industry: 'IT - Rozwój oprogramowania',
-    destination: 'Zdalnie',
+    title: 'Tester',
+    industry: 'Software Testing',
+    destination: 'Remote',
     salary: '12000',
-    availability: 'za miesiąc',
-    languages: 'Angielski, Polski',
-    price: '500zł',
+    availability: 'next month',
+    languages: 'English, Polish',
+    price: '$270',
   },
   {
+    name: 'Minim Veniam',
     picture: './dist/img/person2.jpg',
-    verified: 'Siedem',
+    verified: 'seven',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.',
     rating: '4',
-    title: 'programista',
-    industry: 'IT - Rozwój oprogramowania',
-    destination: 'Zdalnie',
+    title: 'Developer',
+    industry: 'Software Development',
+    destination: 'Remote',
     salary: '12000',
-    availability: 'za miesiąc',
-    languages: 'Angielski, Polski',
-    price: '500zł',
+    availability: 'next month',
+    languages: 'English, Polish',
+    price: '$250',
   },
   {
+    name: 'Ullamco Minim',
     picture: './dist/img/person3.jpg',
-    verified: 'Osiem',
+    verified: 'eight',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.',
     rating: '2',
-    title: 'programista',
-    industry: 'IT - Rozwój oprogramowania',
-    destination: 'Zdalnie',
+    title: 'Tester',
+    industry: 'Software Testing',
+    destination: 'Remote',
     salary: '12000',
-    availability: 'za miesiąc',
-    languages: 'Angielski, Polski',
-    price: '500zł',
+    availability: 'next month',
+    languages: 'English, German',
+    price: '$250',
   },
   {
+    name: 'Lorem Ipsum',
     picture: './dist/img/person4.jpg',
-    verified: 'Dziewięć',
+    verified: 'nine',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.',
     rating: '0',
-    title: 'programista',
-    industry: 'IT - Rozwój oprogramowania',
-    destination: 'Zdalnie',
+    title: 'Developer',
+    industry: 'Software Development',
+    destination: 'Remote',
     salary: '12000',
-    availability: 'za miesiąc',
-    languages: 'Angielski, Polski',
-    price: '500zł',
+    availability: 'next month',
+    languages: 'English, German',
+    price: '$200',
   }
 ]
 

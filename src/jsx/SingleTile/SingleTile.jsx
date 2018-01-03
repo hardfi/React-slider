@@ -11,12 +11,12 @@ class SingleTile extends React.Component {
               background: `url(${this.props.person.picture}) center center /cover no-repeat`
             }}></div>
           <div className='content'>
-            <h4>Profil zweryfikowany przez: <span>{this.props.person.verified}</span></h4>
+            <h4>{this.props.person.name} <span>{this.props.person.verified}</span></h4>
             <p>{this.props.person.description}</p>
             <div className='rating'>
               <Rating stars={this.props.person.rating} />
             </div>
-            <h6>Średnia ocena: {this.props.person.rating}</h6>
+            <h6>Average rating: {this.props.person.rating}</h6>
           </div>
         </div>
         <div className='tile-title'>
@@ -25,39 +25,39 @@ class SingleTile extends React.Component {
         <div className='tile-body'>
           <div className='tile-row'>
             <div>
-              <h5>Branża:</h5>
+              <h5>Industry:</h5>
               <p>{this.props.person.industry}</p>
             </div>
             <div>
-              <h5>Destynacja:</h5>
+              <h5>Destination:</h5>
               <p>{this.props.person.destination}</p>
             </div>
             <div>
-              <h5>Wynagrodzenie:</h5>
+              <h5>Salary:</h5>
               <p>{this.props.person.salary}</p>
             </div>
           </div>
           <div className='tile-row'>
             <div>
-              <h5>Dostępność:</h5>
+              <h5>Availability:</h5>
               <p>{this.props.person.availability}</p>
             </div>
             <div>
-              <h5>Języki</h5>
+              <h5>Languages:</h5>
               <p>{this.props.person.languages}</p>
             </div>
             <div>
-              <h5>Cena za zweryfikowany profil:</h5>
+              <h5>Price for verified profile:</h5>
               <p><span>{this.props.person.price}</span></p>
             </div>
           </div>
         </div>
         <div className='tile-footer'>
           <div className='tile-btns'>
-            <Button>Zobacz pełny opis</Button>
+            <Button>Full description</Button>
             <div className='btns-row2'>
-              <Button>Dodaj do katalogu</Button>
-              <Button>Dodaj do kosza</Button>
+              <Button>Add to favorites</Button>
+              <Button>Don't show again</Button>
             </div>
           </div>
         </div>
